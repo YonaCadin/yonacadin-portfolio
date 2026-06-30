@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yona CADIN — Portfolio</title>
+    <meta name="description" content="Portfolio de Yona CADIN, cheffe de projet polyvalente. Du terrain sportif au numérique, découvrez mes projets en développement web, design et multimédia.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+    <!-- Google Fonts : Outfit pour les titres, Inter pour le corps -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Lien d'évitement pour l'accessibilité -->
+    <a href="#contenu-principal" class="skip-link" data-i18n="skip_link">Aller au contenu principal</a>
+
+    <!-- ===== EN-TÊTE / NAVIGATION ===== -->
+    <header class="header" id="header">
+        <nav class="nav container" aria-label="Navigation principale">
+            <a href="#" class="nav-logo" aria-label="Yona CADIN — Retour à l'accueil">YC</a>
+
+            <div class="nav-menu" id="nav-menu">
+                <a href="#a-propos" class="nav-link" data-i18n="nav_about">À propos</a>
+                <a href="#competences" class="nav-link" data-i18n="nav_skills">Compétences</a>
+                <a href="#projets" class="nav-link" data-i18n="nav_projects">Projets</a>
+                <a href="#parcours" class="nav-link" data-i18n="nav_journey">Parcours</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Bouton langue FR / EN -->
+                <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to English">
+                    <span class="lang-toggle-label" id="lang-label">EN</span>
+                </button>
+
+                <!-- Bouton dark / light mode -->
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activer le mode sombre" aria-pressed="false">
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <!-- Bouton menu hamburger (mobile) -->
+                <button class="nav-burger" id="nav-burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== CONTENU PRINCIPAL ===== -->
+    <main id="contenu-principal">
+
+        <!-- ── Section Hero ── -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+            <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+
+            <div class="hero-content container">
+                <p class="hero-eyebrow reveal" data-i18n="hero_hello">Hello, moi c'est</p>
+                <h1 id="hero-title" class="hero-name">
+                    <span class="hero-name-first reveal">Yona</span>
+                    <span class="hero-name-last reveal">CADIN</span>
+                </h1>
+                <p class="hero-role reveal" data-i18n="hero_role">Cheffe de projet</p>
+                <p class="hero-tagline reveal" data-i18n="hero_tagline">Du terrain sportif au numérique — passionnée, compétitrice, polyvalente.</p>
+                <div class="hero-actions reveal">
+                    <a href="#projets" class="btn btn--primary" data-i18n="hero_cta_projects">Mes projets</a>
+                    <a href="#contact" class="btn btn--outline" data-i18n="hero_cta_contact">Me contacter</a>
+                </div>
+            </div>
+
+            <div class="hero-scroll" aria-hidden="true">
+                <span class="hero-scroll-text">scroll</span>
+                <span class="hero-scroll-line"></span>
+            </div>
+        </section>
+
+        <!-- ── Section À propos ── -->
+        <section class="about section" id="a-propos" aria-labelledby="about-title">
+            <div class="container">
+                <h2 class="section-title reveal" id="about-title">
+                    <span class="section-title-text" data-i18n="section_about">À propos</span>
+                </h2>
+
+                <div class="about-grid">
+                    <div class="about-photo-wrapper reveal">
+                        <div class="about-photo">
+                            <div class="about-photo-placeholder" role="img" aria-label="Photo de Yona CADIN">YC</div>
+                        </div>
+                    </div>
+
+                    <div class="about-text reveal">
+                        <p data-i18n="about_intro">Passionnée par tout ce qui est créatif, j'aime avoir le choix et être polyvalente. Compétitrice dans l'âme, j'aime relever de nouveaux défis.</p>
+                        <p data-i18n="about_bio">Après une licence STAPS Entraînement sportif à l'Université d'Évry Val d'Essonne, je me suis réorientée dans le numérique en intégrant le master Cultures et Métiers du Web à l'Université Gustave Eiffel, en apprentissage chez <strong>Safran Aircraft Engines</strong>. Mon prochain défi : un master en Cybersécurité à l'ESGI Paris dès septembre 2026.</p>
+
+                        <div class="about-tags">
+                            <span class="tag" data-i18n="tag_team">Esprit d'équipe</span>
+                            <span class="tag" data-i18n="tag_versatile">Polyvalence</span>
+                            <span class="tag" data-i18n="tag_dynamic">Dynamisme</span>
+                            <span class="tag" data-i18n="tag_people">Bon relationnel</span>
+                            <span class="tag" data-i18n="tag_comm">Communication</span>
+                        </div>
+
+                        <div class="about-languages">
+                            <div class="language-item">
+                                <span aria-hidden="true">🇫🇷</span>
+                                <span data-i18n="lang_fr">Français — <em>natif</em></span>
+                            </div>
+                            <div class="language-item">
+                                <span aria-hidden="true">🇺🇸</span>
+                                <span data-i18n="lang_en">Anglais — <em>niveau C1</em></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Section Compétences ── -->
+        <section class="skills section" id="competences" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 class="section-title reveal" id="skills-title">
+                    <span class="section-title-text" data-i18n="section_skills">Compétences</span>
+                </h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal" style="--card-accent: var(--accent-lavender);">
+                        <div class="skill-card-icon" aria-hidden="true">&lt;/&gt;</div>
+                        <h3 class="skill-card-title" data-i18n="skill_dev">Développement Web</h3>
+                        <ul class="skill-list">
+                            <li>HTML / CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP / MySQL</li>
+                            <li>Git / GitHub</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" style="--card-accent: var(--accent-pink);">
+                        <div class="skill-card-icon" aria-hidden="true">✦</div>
+                        <h3 class="skill-card-title" data-i18n="skill_design">Design &amp; Créatif</h3>
+                        <ul class="skill-list">
+                            <li>Figma</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Premiere Pro</li>
+                            <li>Clipchamp / Playplay</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card reveal" style="--card-accent: var(--accent-mint);">
+                        <div class="skill-card-icon" aria-hidden="true">◈</div>
+                        <h3 class="skill-card-title" data-i18n="skill_pm">Gestion de projet</h3>
+                        <ul class="skill-list">
+                            <li>Notion / Trello</li>
+                            <li>Planner</li>
+                            <li>Microsoft 365</li>
+                            <li data-i18n="skill_agile">Méthodes agiles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Section Projets ── -->
+        <section class="projects section" id="projets" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 class="section-title reveal" id="projects-title">
+                    <span class="section-title-text" data-i18n="section_projects">Projets</span>
+                </h2>
+
+                <div class="projects-grid">
+
+                    <!-- Projet 1 : Appren -->
+                    <article class="project-card reveal" data-project="appren" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #B8A9E8 0%, #E8D5F5 50%, #F4A9C0 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title">Appren</h3>
+                            <p class="project-card-desc" data-i18n="proj_appren_short">Application web de rencontre entreprises-étudiants inversant le processus de recrutement.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small">HTML/CSS</span>
+                                <span class="tag tag--small">JavaScript</span>
+                                <span class="tag tag--small">PHP/MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_appren_long">Projet réalisé dans le cadre du master CMW. Appren inverse le processus classique de recrutement en alternance : les étudiants créent leur profil avec leurs compétences et aspirations, et ce sont les entreprises qui viennent à leur rencontre.</p>
+                            <a href="https://appren.mastercmw.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small" data-i18n="proj_visit">Visiter le site →</a>
+                        </template>
+                    </article>
+
+                    <!-- Projet 2 : Vivre de la mer à Geoje -->
+                    <article class="project-card reveal" data-project="geoje" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #89CFF0 0%, #A8E6CF 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title" data-i18n="proj_geoje_title">Vivre de la mer à Geoje</h3>
+                            <p class="project-card-desc" data-i18n="proj_geoje_short">Documentaire interactif sur les communautés rurales vivant de la mer en Corée du Sud.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small">HTML/CSS</span>
+                                <span class="tag tag--small">JavaScript</span>
+                                <span class="tag tag--small" data-i18n="tag_documentary">Documentaire</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_geoje_long">Documentaire interactif réalisé lors de mon échange universitaire à Busan. Ce projet explore la vie des communautés rurales qui vivent encore de la pêche et de la mer sur l'île de Geoje, en Corée du Sud.</p>
+                            <a href="https://pecherurale.mastercmw.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small" data-i18n="proj_visit">Visiter le site →</a>
+                        </template>
+                    </article>
+
+                    <!-- Projet 3 : Windmap -->
+                    <article class="project-card reveal" data-project="windmap" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #FFD4B8 0%, #F4A9C0 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title">Windmap</h3>
+                            <p class="project-card-desc" data-i18n="proj_windmap_short">Concept de design interactif — visualisation de données météorologiques.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small" data-i18n="tag_interactive_design">Design interactif</span>
+                                <span class="tag tag--small">Figma</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_windmap_long">Création d'un concept de design interactif autour de la visualisation des vents. Ce projet explore comment rendre les données météorologiques accessibles et esthétiques à travers une interface immersive.</p>
+                            <a href="assets/documents/windmap.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small" data-i18n="proj_view_pdf">Voir le document (PDF) →</a>
+                        </template>
+                    </article>
+
+                    <!-- Projet 4 : Le Ministère du Temps -->
+                    <article class="project-card reveal" data-project="ministere" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #7B68AE 0%, #B8A9E8 50%, #89CFF0 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title" data-i18n="proj_ministere_title">Le Ministère du Temps</h3>
+                            <p class="project-card-desc" data-i18n="proj_ministere_short">Concept de design orienté web — interfaces narratives autour du temps.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small" data-i18n="tag_web_design">Design web</span>
+                                <span class="tag tag--small">Figma</span>
+                                <span class="tag tag--small" data-i18n="tag_art_direction">Direction artistique</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_ministere_long">Concept de design orienté web imaginant un univers autour de la manipulation temporelle. Ce projet explore les interfaces narratives et l'expérience utilisateur au service du storytelling.</p>
+                            <a href="assets/documents/ministere-du-temps.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small" data-i18n="proj_view_pdf">Voir le document (PDF) →</a>
+                        </template>
+                    </article>
+
+                    <!-- Projet 5 : Portfolio photo -->
+                    <article class="project-card reveal" data-project="photo" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #A8E6CF 0%, #FFEAA7 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title" data-i18n="proj_photo_title">Portfolio photo</h3>
+                            <p class="project-card-desc" data-i18n="proj_photo_short">Répertoire de shootings photo de rue — capturer l'énergie urbaine.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small" data-i18n="tag_photography">Photographie</span>
+                                <span class="tag tag--small">Adobe Photoshop</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_photo_long">Un répertoire de shootings photo de rue capturant l'énergie et les instants fugaces de la vie urbaine. Chaque série raconte une histoire entre spontanéité et composition.</p>
+                            <a href="assets/documents/portfolio-photo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small" data-i18n="proj_view_pdf">Voir le document (PDF) →</a>
+                        </template>
+                    </article>
+
+                    <!-- Projet 6 : Mamie au Sana -->
+                    <article class="project-card reveal" data-project="mamie" tabindex="0">
+                        <div class="project-card-visual" style="background: linear-gradient(135deg, #F4A9C0 0%, #DDA0DD 100%);">
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title">Mamie au Sana</h3>
+                            <p class="project-card-desc" data-i18n="proj_mamie_short">Trailer d'un documentaire — l'histoire d'une grand-mère et du sanatorium.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small">Premiere Pro</span>
+                                <span class="tag tag--small" data-i18n="tag_directing">Réalisation</span>
+                                <span class="tag tag--small" data-i18n="tag_editing">Montage</span>
+                            </div>
+                        </div>
+                        <div class="project-card-overlay" aria-hidden="true">
+                            <span data-i18n="proj_see">Voir le projet →</span>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_mamie_long">Réalisation d'un trailer pour un documentaire racontant l'histoire de la grand-mère de Julien et son expérience au sanatorium. Un travail de montage mêlant témoignages, archives et musique.</p>
+                            <div class="modal-video-wrapper">
+                                <video controls preload="metadata" class="modal-video">
+                                    <source src="assets/videos/mamie-au-sana.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </template>
+                    </article>
+
+                    <!-- Projet 7 : Fast & Curious (avec vidéo) — pleine largeur -->
+                    <article class="project-card project-card--wide reveal" data-project="fast" tabindex="0">
+                        <div class="project-card-visual project-card-visual--video" style="background: linear-gradient(135deg, #FF9A76 0%, #F4A9C0 50%, #B8A9E8 100%);">
+                            <div class="video-container">
+                                <video class="project-video" controls preload="metadata">
+                                    <source src="assets/videos/fast-curious.mp4" type="video/mp4">
+                                    <p data-i18n="video_fallback">Votre navigateur ne supporte pas la lecture vidéo.</p>
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h3 class="project-card-title">Fast &amp; Curious</h3>
+                            <p class="project-card-desc" data-i18n="proj_fast_short">Vidéo interview pour la promotion d'un tournoi d'eSport — dynamisme et storytelling.</p>
+                            <div class="project-card-tags">
+                                <span class="tag tag--small">Premiere Pro</span>
+                                <span class="tag tag--small">Clipchamp</span>
+                                <span class="tag tag--small" data-i18n="tag_video_editing">Montage vidéo</span>
+                            </div>
+                        </div>
+                        <template class="project-detail">
+                            <p data-i18n="proj_fast_long">Création d'une vidéo interview au format « Fast & Curious » pour promouvoir un tournoi d'eSport. Un exercice de montage dynamique mêlant interviews rapides, transitions percutantes et storytelling visuel.</p>
+                        </template>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Section Parcours ── -->
+        <section class="timeline-section section" id="parcours" aria-labelledby="parcours-title">
+            <div class="container">
+                <h2 class="section-title reveal" id="parcours-title">
+                    <span class="section-title-text" data-i18n="section_journey">Parcours</span>
+                </h2>
+
+                <div class="timeline">
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <div class="timeline-item reveal" data-position="left">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2016</span>
+                            <h3 class="timeline-card-title">Lycée Timpview, Utah 🇺🇸</h3>
+                            <p class="timeline-card-desc" data-i18n="journey_1">Étudiante d'échange aux États-Unis. Une expérience fondatrice qui m'a permis d'atteindre un niveau d'anglais C1 et de découvrir une autre culture.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal" data-position="right">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2018 — 2022</span>
+                            <h3 class="timeline-card-title" data-i18n="journey_2_title">Licence STAPS Entraînement sportif</h3>
+                            <p class="timeline-card-desc" data-i18n="journey_2">Université d'Évry Val d'Essonne. Formation axée sur la performance sportive, le coaching et la méthodologie d'entraînement.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal" data-position="left">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024</span>
+                            <h3 class="timeline-card-title">Université Dong Eui, Busan 🇰🇷</h3>
+                            <p class="timeline-card-desc" data-i18n="journey_3">Échange universitaire d'un semestre en Corée du Sud. Immersion culturelle et réalisation du documentaire interactif « Vivre de la mer à Geoje ».</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal" data-position="right">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024 — 2026</span>
+                            <h3 class="timeline-card-title" data-i18n="journey_4_title">Master CMW + Safran Aircraft Engines</h3>
+                            <p class="timeline-card-desc" data-i18n="journey_4">Master Cultures et Métiers du Web à l'Université Gustave Eiffel, en apprentissage chez Safran Aircraft Engines. Gestion de projet, développement web et communication digitale.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal" data-position="left">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2026 →</span>
+                            <h3 class="timeline-card-title" data-i18n="journey_5_title">Master Cybersécurité — ESGI Paris</h3>
+                            <p class="timeline-card-desc" data-i18n="journey_5">Prochaine étape : approfondir mes compétences en sécurité informatique et protection des systèmes d'information.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Section Contact ── -->
+        <section class="contact section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title reveal" id="contact-title">
+                    <span class="section-title-text" data-i18n="section_contact">Contact</span>
+                </h2>
+
+                <div class="contact-content reveal">
+                    <p class="contact-intro" data-i18n="contact_intro">Un projet, une question ou juste envie de discuter ? N'hésitez pas à me contacter !</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:yona.cadin@outlook.fr" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>yona.cadin@outlook.fr</span>
+                        </a>
+                        <a href="https://github.com/YonaCadin" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== PIED DE PAGE ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-copy">&copy; 2026 Yona CADIN — <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+            <button class="footer-legal-btn" id="open-legal" type="button" data-i18n="footer_legal">Mentions légales</button>
+        </div>
+    </footer>
+
+    <!-- ===== MODAL : DÉTAIL PROJET ===== -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" tabindex="-1">
+            <button class="modal-close" type="button" aria-label="Fermer" data-close-modal>&times;</button>
+            <div class="modal-body">
+                <h3 class="modal-title" id="modal-project-title"></h3>
+                <div class="modal-description"></div>
+                <div class="modal-tags"></div>
+                <div class="modal-media"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL : MENTIONS LÉGALES ===== -->
+    <div class="modal" id="legal-modal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-dialog modal-dialog--large" role="dialog" aria-modal="true" aria-labelledby="legal-title" tabindex="-1">
+            <button class="modal-close" type="button" aria-label="Fermer" data-close-modal>&times;</button>
+            <div class="modal-body">
+                <h3 class="modal-title" id="legal-title" data-i18n="legal_title">Mentions légales</h3>
+
+                <h4 data-i18n="legal_publisher_title">Responsable de publication</h4>
+                <p><strong data-i18n="legal_name_label">Nom :</strong> Yona CADIN</p>
+                <p><strong>Email :</strong> <a href="mailto:yona.cadin@outlook.fr">yona.cadin@outlook.fr</a></p>
+
+                <h4 data-i18n="legal_hosting_title">Hébergement</h4>
+                <p data-i18n="legal_hosting">Ce site est hébergé sur <strong>GitHub Pages</strong>, un service proposé par GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis.</p>
+
+                <h4 data-i18n="legal_ip_title">Propriété intellectuelle</h4>
+                <p data-i18n="legal_ip">Le contenu de ce site (textes, images, vidéos, maquettes et éléments graphiques) est la propriété intellectuelle de Yona CADIN, sauf indication contraire. Toute reproduction ou utilisation sans autorisation préalable est interdite.</p>
+
+                <h4 data-i18n="legal_liability_title">Responsabilité</h4>
+                <p data-i18n="legal_liability">L'autrice du site s'efforce de fournir des informations exactes et à jour, mais ne peut garantir l'absence d'erreurs ou d'omissions.</p>
+
+                <h4 data-i18n="legal_links_title">Liens externes</h4>
+                <p data-i18n="legal_links">Ce site peut contenir des liens vers des sites externes. L'autrice n'est pas responsable du contenu de ces sites tiers.</p>
+
+                <h4 data-i18n="legal_data_title">Protection des données</h4>
+                <p data-i18n="legal_data">Ce site ne collecte aucune donnée personnelle. Aucun cookie, aucun outil de suivi ou d'analyse n'est utilisé.</p>
+
+                <h4 data-i18n="legal_ai_title">Utilisation de l'intelligence artificielle</h4>
+                <p data-i18n="legal_ai_intro">Ce portfolio a été développé avec l'aide d'outils d'intelligence artificielle dans une démarche d'utilisation raisonnée :</p>
+                <ul>
+                    <li><strong data-i18n="legal_ai_1_label">Autocomplétion de code :</strong> <span data-i18n="legal_ai_1">Assistance à l'écriture via les fonctionnalités intégrées à l'éditeur de code (VS Code).</span></li>
+                    <li><strong data-i18n="legal_ai_2_label">Aide à la résolution de problèmes :</strong> <span data-i18n="legal_ai_2">Consultation ponctuelle pour résoudre des difficultés techniques spécifiques.</span></li>
+                </ul>
+                <p data-i18n="legal_ai_disclaimer">L'intégralité du code n'a pas été générée par une IA. Les passages ayant bénéficié d'une assistance sont indiqués par des commentaires dans le code source.</p>
+
+                <p class="legal-updated"><em data-i18n="legal_updated">Dernière mise à jour : juin 2026</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
